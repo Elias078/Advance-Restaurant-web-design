@@ -1,0 +1,402 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 1000px;
+}
+
+
+p{
+    font-weight: 300;
+    color: #111;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/back.jpg);
+    background-size: cover;
+    
+}
+
+.banner .content{
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2{
+    font-size: 5em;
+    color: #fff;
+
+}
+
+.banner span{
+    color: #ff0157;
+    font-size: 1em;
+}
+
+.banner .content p{
+    color: #fff;
+    font-size: 1em;
+}
+
+.btn{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s ease;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    letter-spacing: 6px;
+    box-shadow: 0 5px 35px rgba(212, 5, 74, 0.9);
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    transition: 0.5s;
+    display: flex;
+    justify-content: space-between;
+}
+
+header.sticky{
+    background: #111;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+
+}
+
+header.sticky .logo span{
+    font-size: 1em;
+}
+
+header .logo{
+    color: white;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    border-bottom: 2px solid #ff0157;
+}
+
+header .logo span{
+    color: #ff0157;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+header .navigation{
+    position: relative;
+    display: flex;
+}
+
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+
+header .navigation li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+    font-size: 1.2em;
+}
+
+header .navigation li a:hover{
+    border-bottom: 4px solid #ff0157;
+}
+
+section{
+    padding: 100px;
+}
+
+
+/* About section */
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+
+.title-text{
+    color: #111;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.title-text span{
+    color: #ff0157;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+
+.row .col50 .imgbox{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+.row .col50 .imgbox img{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.row .col50 p{
+    font-size: 21px;
+    font-family: sans-serif;
+    word-spacing: 3px;
+    color: #111;
+    
+}
+
+.title{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu .content1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+.menu .content1 .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.menu .content1 .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.menu .content1 .box .imgbox img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu .content1 .box:hover{
+    box-shadow: 0 5px 35px rgba(212, 5, 74, 0.9);
+}
+
+.text{
+    padding: 10px;
+    margin-top: 10px;
+    
+}
+
+.text h2{
+    text-align: center;
+    color: #111;
+    font-size: 1em;
+    border-bottom: 2px solid #ff0157;
+    padding: 5px;
+}
+
+
+.expert .content{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 40px;
+
+}
+
+.expert .content .box{
+    width: 250px;
+    margin: 15px;
+    transition: 0.5S;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.expert .content .box .imgbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+.expert .content .box .imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.expert .content .box:hover{
+    box-shadow: 0 5px 35px rgba(212, 5, 74, 0.9);
+}
+
+.contact{
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/bgim.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact .title{
+    margin-top: -90px;
+}
+
+.contact .title h2{
+    color: white;
+}
+
+.contact .title p{
+    color: white;
+}
+
+.contactform{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+    height: 450px;
+    transition: 0.5s;
+}
+
+.contactform:hover{
+    box-shadow: 0 5px 35px rgba(212, 5, 74, 0.9);
+}
+
+.contactform h3{
+    margin-top: -30px;
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contactform .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.contactform .inputBox input{
+    width: 100%;
+    border: 1px solid #555;
+    color: #111;
+    outline: none;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 5px;
+}
+
+.contactform .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    color: #111;
+    outline: none;
+    font-size: 25px;
+    font-weight: 300;
+    resize: none;
+    padding: 5px;
+}
+
+.contactform .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    padding: 10px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.contactform .inputBox input[type="submit"]:hover{
+    
+    letter-spacing: 6px;
+    box-shadow: 0 5px 35px rgba(212, 5, 74, 0.9);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
